@@ -21,6 +21,7 @@ class ReflectionTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        retrieveReflections()
         
         // Styles
         self.tableView.backgroundColor = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
@@ -30,9 +31,12 @@ class ReflectionTableViewController: UITableViewController {
         super.viewWillAppear(true)
         retrieveReflections()
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -59,12 +63,33 @@ class ReflectionTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            //tableView.deleteRows(at: [indexPath], with: .fade)
         }
-        
         tableView.reloadData()
     }
     
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let delete = UITableViewRowAction(style: .destructive, title: "                    ") { (action, indexPath) in
+            
+            let reflection = self.reflections[indexPath.row]
+            context.delete(reflection)
+            
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            do {
+                self.reflections = try context.fetch(Reflection.fetchRequest())
+            } catch {
+                print("Failed to delete note.")
+            }
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
+        }
+        
+        delete.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "trashIcon"))
+        return [delete]
+    }
+    
+    // MARK: NSCoding
     func retrieveReflections() {
         managedObjectContext?.perform {
             self.fetchReflectionsFromCoreData { (reflections) in
@@ -87,6 +112,25 @@ class ReflectionTableViewController: UITableViewController {
             } catch {
                 print("Could not fetch reflections from CoreData:\(error.localizedDescription)")
             }
+        }
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetails" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                
+                let reflectionDetailsViewController = segue.destination as! ReflectionDetailViewController
+                let selectedReflection: Reflection = reflections[indexPath.row]
+                
+                reflectionDetailsViewController.indexPath = indexPath.row
+                reflectionDetailsViewController.isExsisting = false
+                reflectionDetailsViewController.reflection = selectedReflection
+            }
+        }
+        
+        else if segue.identifier == "AddReflection" {
+            print("User added a new note.")
         }
     }
 
