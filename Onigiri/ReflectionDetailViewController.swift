@@ -27,7 +27,6 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
     @IBOutlet weak var answer4TextView: UITextView!
     
     
-    
     let question1 = "erstens"
     let question2 = "zweitens"
     let question3 = "drittens"
@@ -130,26 +129,28 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
                 let answer2 = answer2TextView.text
                 let answer3 = answer3TextView.text
                 let answer4 = answer4TextView.text
-                
+               
                 if let moc = managedObjectContext {
                     let reflection = Reflection(context: moc)
-                }
                 
-                reflection?.answer1 = answer1
-                reflection?.answer2 = answer2
-                reflection?.answer3 = answer3
-                reflection?.answer4 = answer4
+                reflection.answer1 = answer1
+                reflection.answer2 = answer2
+                reflection.answer3 = answer3
+                reflection.answer4 = answer4
                 
                 saveToCoreData() {
                     
                     let isPresentingInAddFluidPatientMode = self.presentingViewController is UINavigationController
-                        if isPresentingInAddFluidPatientMode {
+                    if isPresentingInAddFluidPatientMode {
                             self.dismiss(animated: true, completion: nil)
                         } else {
                             self.navigationController!.popViewController(animated: true)
-                        }
                     }
-                } else if (isExsisting == true) {
+                    }
+                }
+            }
+            
+            else if (isExsisting == true) {
                     let reflection = self.reflection
                     
                     let managedObject = reflection
@@ -184,16 +185,19 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
     }
     
     // hiding keyboard
-    func textViewShouldReturn(_ textView: UITextView) -> Bool {
-        textView.resignFirstResponder()
-        return false
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
     }
     
     // vorschautext verschwindet
-    internal func textViewDidBeginEditing(_ textView: UITextView) {
+    func textViewDidBeginEditing(_ textView: UITextView) {
         if (textView.text == "Hier kannst du deine Reflektion festhalten") {
             textView.text = ""
         }
     }
-
+    
 }
