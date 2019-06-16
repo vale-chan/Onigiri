@@ -31,6 +31,11 @@ class ReflectionTableViewCell: UITableViewCell {
     
     func configureCell(reflection: Reflection) {
         self.previewLabel.text = reflection.answer1
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .full
+        dateFormatter.locale = Locale(identifier: "de_DE")
+        self.dateLabel.text = dateFormatter.string(for: reflection.date)
     }
 
 }

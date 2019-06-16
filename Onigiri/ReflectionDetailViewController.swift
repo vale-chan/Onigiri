@@ -151,6 +151,7 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
                     reflection.answer2 = answer2
                     reflection.answer3 = answer3
                     reflection.answer4 = answer4
+                    reflection.date = Date()
                     
                     saveToCoreData() {
                         
