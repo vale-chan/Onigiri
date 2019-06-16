@@ -42,7 +42,7 @@ class ReflectionTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ReflectionTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReflectionTableViewCell", for: indexPath) as! ReflectionTableViewCell
         
         let reflection: Reflection = reflections[indexPath.row]
         cell.configureCell(reflection: reflection)

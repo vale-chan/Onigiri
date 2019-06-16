@@ -225,8 +225,16 @@
                         <viewLayoutGuide key="safeArea" id="Tuj-Kb-jKQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Neue Reflektion" id="1Mv-Xy-DT8">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="a97-Zc-cIE"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="PXi-FV-hDl"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="a97-Zc-cIE">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="d3M-hf-g7i" id="OkQ-fI-WA6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="PXi-FV-hDl">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="d3M-hf-g7i" id="9ME-ST-fRZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="answer1TextView" destination="Zmx-sv-JDh" id="sMH-Bg-lCf"/>
