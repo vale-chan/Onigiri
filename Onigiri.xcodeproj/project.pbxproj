@@ -15,6 +15,7 @@
 		02EFDBAD22B657D500A157D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EFDBAB22B657D500A157D2 /* LaunchScreen.storyboard */; };
 		02EFDBB522B6625C00A157D2 /* ReflectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFDBB422B6625C00A157D2 /* ReflectionTableViewController.swift */; };
 		02EFDBB722B669BD00A157D2 /* ReflectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFDBB622B669BD00A157D2 /* ReflectionTableViewCell.swift */; };
+		02EFDBB922B66CAB00A157D2 /* ReflectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFDBB822B66CAB00A157D2 /* ReflectionDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		02EFDBAE22B657D500A157D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02EFDBB422B6625C00A157D2 /* ReflectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionTableViewController.swift; sourceTree = "<group>"; };
 		02EFDBB622B669BD00A157D2 /* ReflectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionTableViewCell.swift; sourceTree = "<group>"; };
+		02EFDBB822B66CAB00A157D2 /* ReflectionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				02EFDBAE22B657D500A157D2 /* Info.plist */,
 				02EFDBB422B6625C00A157D2 /* ReflectionTableViewController.swift */,
 				02EFDBB622B669BD00A157D2 /* ReflectionTableViewCell.swift */,
+				02EFDBB822B66CAB00A157D2 /* ReflectionDetailViewController.swift */,
 				02EFDBA622B657D400A157D2 /* Onigiri.xcdatamodeld */,
 			);
 			path = Onigiri;
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EFDBB922B66CAB00A157D2 /* ReflectionDetailViewController.swift in Sources */,
 				02EFDBB722B669BD00A157D2 /* ReflectionTableViewCell.swift in Sources */,
 				02EFDBB522B6625C00A157D2 /* ReflectionTableViewController.swift in Sources */,
 				02EFDBA822B657D400A157D2 /* Onigiri.xcdatamodeld in Sources */,

@@ -89,7 +89,7 @@
         <!--Neue Reflektion-->
         <scene sceneID="YAV-mo-jY7">
             <objects>
-                <viewController id="d3M-hf-g7i" sceneMemberID="viewController">
+                <viewController id="d3M-hf-g7i" customClass="ReflectionDetailViewController" customModule="Onigiri" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EoM-Wt-Ffi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,6 +228,20 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="a97-Zc-cIE"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="PXi-FV-hDl"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="answer1TextView" destination="Zmx-sv-JDh" id="sMH-Bg-lCf"/>
+                        <outlet property="answer2TextView" destination="0Ym-SY-xXv" id="j7T-9E-5wq"/>
+                        <outlet property="answer3TextView" destination="lwq-bt-2zf" id="bQ5-ag-4gP"/>
+                        <outlet property="answer4TextView" destination="gb1-MG-1cX" id="jJA-2z-2XI"/>
+                        <outlet property="part1View" destination="1jT-UN-uv4" id="mu7-02-3hm"/>
+                        <outlet property="part2View" destination="aqj-FX-f5A" id="ME1-4a-wSL"/>
+                        <outlet property="part3View" destination="Qhv-Az-djB" id="Mzt-iy-yze"/>
+                        <outlet property="part4View" destination="07j-dY-GXZ" id="kMm-Yd-s6d"/>
+                        <outlet property="question1Label" destination="vt8-bN-opK" id="alX-V0-Vzt"/>
+                        <outlet property="question2Label" destination="0fR-1v-CWo" id="HeK-1B-Nfl"/>
+                        <outlet property="question3Label" destination="i2e-hH-kAZ" id="y1s-Md-UZt"/>
+                        <outlet property="question4Label" destination="P9F-RE-yXi" id="PLn-G7-bIj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zhh-jX-coU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
