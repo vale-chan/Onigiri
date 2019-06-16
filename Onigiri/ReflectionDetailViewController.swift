@@ -27,10 +27,10 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
     @IBOutlet weak var answer4TextView: UITextView!
     
     
-    let question1 = "erstens"
-    let question2 = "zweitens"
-    let question3 = "drittens"
-    let question4 = "viertens"
+    let question1 = "Welcher Aspekt deines Unterrichts hat dich heute (wieder) beschäftigt?"
+    let question2 = "Aus welchen Gründen beschäftigt dich das?"
+    let question3 = "Was könnte man ändern? Welche Möglichkeiten gibt es?"
+    let question4 = "Was daran betrifft dich und was sagt das über dich aus?"
     
     
     var managedObjectContext: NSManagedObjectContext? {
