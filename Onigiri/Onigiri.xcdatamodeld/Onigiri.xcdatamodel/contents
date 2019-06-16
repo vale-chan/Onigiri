@@ -5,12 +5,8 @@
         <attribute name="answer2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="answer3" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="answer4" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="question1" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="question2" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="question3" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="question4" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Reflection" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Reflection" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>
