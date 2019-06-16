@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReflectionTableViewCell" rowHeight="109" id="kJk-zz-SU0">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReflectionTableViewCell" rowHeight="109" id="kJk-zz-SU0" customClass="ReflectionTableViewCell" customModule="Onigiri" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="109"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kJk-zz-SU0" id="5rO-od-XIJ">
@@ -27,36 +27,44 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgx-45-HrJ">
-                                            <rect key="frame" x="82.5" y="8" width="210" height="92.5"/>
+                                            <rect key="frame" x="8" y="8" width="359" height="92.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnt-b8-DD0">
+                                                    <rect key="frame" x="8" y="8" width="343" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Preview..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs5-Q0-0C0">
+                                                    <rect key="frame" x="8" y="8" width="343" height="76.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="fs5-Q0-0C0" firstAttribute="leading" secondItem="wgx-45-HrJ" secondAttribute="leading" constant="8" id="2Zj-jf-xT6"/>
+                                                <constraint firstAttribute="trailing" secondItem="fs5-Q0-0C0" secondAttribute="trailing" constant="8" id="8Do-Cz-0VU"/>
+                                                <constraint firstAttribute="bottom" secondItem="fs5-Q0-0C0" secondAttribute="bottom" constant="8" id="8kj-3z-2Un"/>
+                                                <constraint firstItem="fs5-Q0-0C0" firstAttribute="top" secondItem="wgx-45-HrJ" secondAttribute="top" constant="8" id="aA4-h5-OGk"/>
+                                                <constraint firstAttribute="trailing" secondItem="Vnt-b8-DD0" secondAttribute="trailing" constant="8" id="bfo-Pi-5d0"/>
+                                                <constraint firstItem="Vnt-b8-DD0" firstAttribute="leading" secondItem="wgx-45-HrJ" secondAttribute="leading" constant="8" id="g3U-LR-es3"/>
+                                                <constraint firstItem="Vnt-b8-DD0" firstAttribute="top" secondItem="wgx-45-HrJ" secondAttribute="top" constant="8" id="tiv-cj-RWu"/>
+                                            </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Datum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnt-b8-DD0">
-                                            <rect key="frame" x="24" y="19" width="335" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Preview..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs5-Q0-0C0">
-                                            <rect key="frame" x="24" y="19" width="327" height="71"/>
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="wgx-45-HrJ" firstAttribute="top" secondItem="5rO-od-XIJ" secondAttribute="topMargin" constant="-3" id="9Eb-bN-cmf"/>
-                                        <constraint firstItem="Vnt-b8-DD0" firstAttribute="top" secondItem="5rO-od-XIJ" secondAttribute="topMargin" constant="8" id="FjS-pb-nn4"/>
-                                        <constraint firstItem="wgx-45-HrJ" firstAttribute="leading" secondItem="Vnt-b8-DD0" secondAttribute="trailing" constant="8" id="HNh-wZ-p8k"/>
-                                        <constraint firstItem="wgx-45-HrJ" firstAttribute="centerY" secondItem="5rO-od-XIJ" secondAttribute="centerY" id="IlM-BS-mYL"/>
-                                        <constraint firstItem="wgx-45-HrJ" firstAttribute="centerX" secondItem="5rO-od-XIJ" secondAttribute="centerX" id="NKu-DQ-a8p"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="fs5-Q0-0C0" secondAttribute="bottom" constant="8" id="QNs-6a-Wkk"/>
-                                        <constraint firstItem="Vnt-b8-DD0" firstAttribute="leading" secondItem="5rO-od-XIJ" secondAttribute="leadingMargin" constant="8" id="lk3-gH-Vkn"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="fs5-Q0-0C0" secondAttribute="trailing" constant="8" id="m0v-og-v7K"/>
-                                        <constraint firstItem="fs5-Q0-0C0" firstAttribute="leading" secondItem="5rO-od-XIJ" secondAttribute="leadingMargin" constant="8" id="odb-XY-iyn"/>
-                                        <constraint firstItem="fs5-Q0-0C0" firstAttribute="top" secondItem="5rO-od-XIJ" secondAttribute="topMargin" constant="8" id="u5u-KX-KSo"/>
+                                        <constraint firstAttribute="bottom" secondItem="wgx-45-HrJ" secondAttribute="bottom" constant="8" id="7dg-IX-8Li"/>
+                                        <constraint firstAttribute="trailing" secondItem="wgx-45-HrJ" secondAttribute="trailing" constant="8" id="HOC-eC-zWl"/>
+                                        <constraint firstItem="wgx-45-HrJ" firstAttribute="leading" secondItem="5rO-od-XIJ" secondAttribute="leading" constant="8" id="TSA-Tp-1oC"/>
+                                        <constraint firstItem="wgx-45-HrJ" firstAttribute="top" secondItem="5rO-od-XIJ" secondAttribute="top" constant="8" id="a25-vJ-AEw"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="dateLabel" destination="Vnt-b8-DD0" id="moQ-ZF-RHX"/>
+                                    <outlet property="previewLabel" destination="fs5-Q0-0C0" id="yaE-Ew-uxf"/>
+                                    <outlet property="shadowView" destination="wgx-45-HrJ" id="iCb-MO-HYQ"/>
                                     <segue destination="d3M-hf-g7i" kind="show" identifier="ShowReflection" id="KlQ-4A-eV4"/>
                                 </connections>
                             </tableViewCell>
