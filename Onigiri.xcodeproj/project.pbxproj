@@ -13,6 +13,7 @@
 		02EFDBA822B657D400A157D2 /* Onigiri.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02EFDBA622B657D400A157D2 /* Onigiri.xcdatamodeld */; };
 		02EFDBAA22B657D500A157D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EFDBA922B657D500A157D2 /* Assets.xcassets */; };
 		02EFDBAD22B657D500A157D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EFDBAB22B657D500A157D2 /* LaunchScreen.storyboard */; };
+		02EFDBB522B6625C00A157D2 /* ReflectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFDBB422B6625C00A157D2 /* ReflectionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		02EFDBA922B657D500A157D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02EFDBAC22B657D500A157D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02EFDBAE22B657D500A157D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02EFDBB422B6625C00A157D2 /* ReflectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				02EFDBA922B657D500A157D2 /* Assets.xcassets */,
 				02EFDBAB22B657D500A157D2 /* LaunchScreen.storyboard */,
 				02EFDBAE22B657D500A157D2 /* Info.plist */,
+				02EFDBB422B6625C00A157D2 /* ReflectionTableViewController.swift */,
 				02EFDBA622B657D400A157D2 /* Onigiri.xcdatamodeld */,
 			);
 			path = Onigiri;
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EFDBB522B6625C00A157D2 /* ReflectionTableViewController.swift in Sources */,
 				02EFDBA822B657D400A157D2 /* Onigiri.xcdatamodeld in Sources */,
 				02EFDBA222B657D400A157D2 /* ViewController.swift in Sources */,
 				02EFDBA022B657D400A157D2 /* AppDelegate.swift in Sources */,
