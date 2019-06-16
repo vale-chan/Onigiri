@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ljb-Po-2ZL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1il-Vt-XRG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -95,10 +95,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="RgX-wD-xTt">
-                                <rect key="frame" x="8" y="72" width="359" height="587"/>
+                                <rect key="frame" x="8" y="72" width="359" height="538"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jT-UN-uv4">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="129.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="117.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frage1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vt8-bN-opK">
                                                 <rect key="frame" x="8" y="8" width="343" height="20.5"/>
@@ -107,10 +107,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zmx-sv-JDh">
-                                                <rect key="frame" x="8" y="36.5" width="343" height="85"/>
+                                                <rect key="frame" x="8" y="36.5" width="343" height="73"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -127,7 +126,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqj-FX-f5A">
-                                        <rect key="frame" x="0.0" y="152.5" width="359" height="129.5"/>
+                                        <rect key="frame" x="0.0" y="140.5" width="359" height="117"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frage2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fR-1v-CWo">
                                                 <rect key="frame" x="8" y="8" width="343" height="20.5"/>
@@ -135,12 +134,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hier kannst du deine Reflektion festhalten" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Ym-SY-xXv">
-                                                <rect key="frame" x="8" y="36.5" width="343" height="85"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Ym-SY-xXv">
+                                                <rect key="frame" x="8" y="36.5" width="343" height="72.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                </variation>
                                             </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -157,7 +158,7 @@
                                         <viewLayoutGuide key="safeArea" id="idj-XJ-096"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qhv-Az-djB">
-                                        <rect key="frame" x="0.0" y="305" width="359" height="129.5"/>
+                                        <rect key="frame" x="0.0" y="280.5" width="359" height="117.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frage3" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2e-hH-kAZ">
                                                 <rect key="frame" x="8" y="8" width="343" height="20.5"/>
@@ -165,11 +166,10 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hier kannst du deine Reflektion festhalten" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lwq-bt-2zf">
-                                                <rect key="frame" x="8" y="36.5" width="343" height="85"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lwq-bt-2zf">
+                                                <rect key="frame" x="8" y="36.5" width="343" height="73"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -187,7 +187,7 @@
                                         <viewLayoutGuide key="safeArea" id="D73-Le-sD1"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07j-dY-GXZ">
-                                        <rect key="frame" x="0.0" y="457.5" width="359" height="129.5"/>
+                                        <rect key="frame" x="0.0" y="421" width="359" height="117"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frage4" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9F-RE-yXi">
                                                 <rect key="frame" x="8" y="8" width="343" height="20.5"/>
@@ -195,11 +195,10 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hier kannst du deine Reflektion festhalten" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-MG-1cX">
-                                                <rect key="frame" x="8" y="36.5" width="343" height="85"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-MG-1cX">
+                                                <rect key="frame" x="8" y="36.5" width="343" height="72.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -259,10 +258,76 @@
             </objects>
             <point key="canvasLocation" x="1693.5999999999999" y="106.59670164917542"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="ImM-Mm-BUo">
+            <objects>
+                <tabBarController id="1il-Vt-XRG" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="le2-aL-8ho">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ljb-Po-2ZL" kind="relationship" relationship="viewControllers" id="MOR-aU-E6B"/>
+                        <segue destination="GEd-sn-qiB" kind="relationship" relationship="viewControllers" id="Rge-kZ-Apr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Npm-38-jTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-958" y="-230"/>
+        </scene>
+        <!--Reflektieren mit Onigiri-->
+        <scene sceneID="uGw-Zv-bPM">
+            <objects>
+                <viewController id="cFH-Dy-aTC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vXN-xZ-XE9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwu-ow-9Oa">
+                                <rect key="frame" x="8" y="72" width="359" height="538"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFt-8i-JBY">
+                                        <rect key="frame" x="8" y="8" width="343" height="522"/>
+                                        <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+-- 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cFt-8i-JBY" firstAttribute="leading" secondItem="Dwu-ow-9Oa" secondAttribute="leading" constant="8" id="6Rg-6M-t4D"/>
+                                    <constraint firstAttribute="bottom" secondItem="cFt-8i-JBY" secondAttribute="bottom" constant="8" id="J4a-kK-duX"/>
+                                    <constraint firstAttribute="trailing" secondItem="cFt-8i-JBY" secondAttribute="trailing" constant="8" id="OGo-Ei-5va"/>
+                                    <constraint firstItem="cFt-8i-JBY" firstAttribute="top" secondItem="Dwu-ow-9Oa" secondAttribute="top" constant="8" id="fa7-H9-mci"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OHt-LV-Ozt" firstAttribute="trailing" secondItem="Dwu-ow-9Oa" secondAttribute="trailing" constant="8" id="WAn-0r-Wyv"/>
+                            <constraint firstItem="Dwu-ow-9Oa" firstAttribute="top" secondItem="OHt-LV-Ozt" secondAttribute="top" constant="8" id="e0X-Ae-dGr"/>
+                            <constraint firstItem="Dwu-ow-9Oa" firstAttribute="leading" secondItem="OHt-LV-Ozt" secondAttribute="leading" constant="8" id="h4g-2o-454"/>
+                            <constraint firstItem="OHt-LV-Ozt" firstAttribute="bottom" secondItem="Dwu-ow-9Oa" secondAttribute="bottom" constant="8" id="iWx-nI-j8P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OHt-LV-Ozt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reflektieren mit Onigiri" id="v6c-b5-hzE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Rf-at-Azf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909.60000000000002" y="-626.53673163418296"/>
+        </scene>
+        <!--Reflektionen-->
         <scene sceneID="f05-Xv-lFk">
             <objects>
                 <navigationController id="ljb-Po-2ZL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Reflektionen" image="list" selectedImage="list" id="Ls4-WJ-EGn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e0v-sT-Qi7">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -293,7 +358,30 @@
             </objects>
             <point key="canvasLocation" x="910" y="846"/>
         </scene>
+        <!--Infos-->
+        <scene sceneID="FGJ-a8-WdM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GEd-sn-qiB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Infos" image="info" selectedImage="info" id="sgh-ve-LYl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HZU-pX-LSi">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cFH-Dy-aTC" kind="relationship" relationship="rootViewController" id="laa-qP-KYT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8v-TH-Gww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="-626.53673163418296"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="info" width="30" height="30"/>
+        <image name="list" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="KlQ-4A-eV4"/>
     </inferredMetricsTieBreakers>

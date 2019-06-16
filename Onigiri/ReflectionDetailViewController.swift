@@ -66,6 +66,7 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
         question3Label.text = question3
         question4Label.text = question4
         
+        
         // Load data
         if let reflection = reflection {
             answer1TextView.text = reflection.answer1
@@ -194,16 +195,6 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
             dismiss(animated: true, completion: nil)
         } else {
             navigationController!.popViewController(animated: true)
-        }
-    }
-    
-    // hiding keyboard
-    
-    
-    // vorschautext verschwindet
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        if (textView.text == "Hier kannst du deine Reflektion festhalten") {
-            textView.text = ""
         }
     }
     
