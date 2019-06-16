@@ -63,7 +63,7 @@ class ReflectionTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            //tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
         tableView.reloadData()
     }
@@ -85,7 +85,7 @@ class ReflectionTableViewController: UITableViewController {
             tableView.reloadData()
         }
         
-        delete.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "trashIcon"))
+        delete.backgroundColor = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
         return [delete]
     }
     
