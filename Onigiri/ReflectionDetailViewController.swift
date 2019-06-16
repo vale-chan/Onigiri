@@ -9,6 +9,18 @@
 import UIKit
 import CoreData
 
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
 class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var part1View: UIView!
@@ -46,6 +58,7 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         
         // set questions
         question1Label.text = question1
@@ -185,13 +198,7 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
     }
     
     // hiding keyboard
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if(text == "\n") {
-            textView.resignFirstResponder()
-            return false
-        }
-        return true
-    }
+    
     
     // vorschautext verschwindet
     func textViewDidBeginEditing(_ textView: UITextView) {
