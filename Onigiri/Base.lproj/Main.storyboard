@@ -228,7 +228,7 @@
                         <viewLayoutGuide key="safeArea" id="Tuj-Kb-jKQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Neue Reflektion" id="1Mv-Xy-DT8">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="a97-Zc-cIE">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="a97-Zc-cIE">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="d3M-hf-g7i" id="OkQ-fI-WA6"/>
                             </connections>
@@ -268,8 +268,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ljb-Po-2ZL" kind="relationship" relationship="viewControllers" id="MOR-aU-E6B"/>
                         <segue destination="GEd-sn-qiB" kind="relationship" relationship="viewControllers" id="Rge-kZ-Apr"/>
+                        <segue destination="ljb-Po-2ZL" kind="relationship" relationship="viewControllers" id="quH-Hw-Kh6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Npm-38-jTu" userLabel="First Responder" sceneMemberID="firstResponder"/>

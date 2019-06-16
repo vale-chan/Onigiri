@@ -21,7 +21,7 @@ extension UIViewController {
     }
 }
 
-class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINavigationControllerDelegate {
+class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINavigationControllerDelegate, UITabBarDelegate {
     
     @IBOutlet weak var part1View: UIView!
     @IBOutlet weak var part2View: UIView!
@@ -154,7 +154,7 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
                     
                     saveToCoreData() {
                         
-                        let isPresentingInAddFluidPatientMode = self.presentingViewController is UINavigationController
+                        let isPresentingInAddFluidPatientMode = self.presentingViewController is UITabBarController
                         if isPresentingInAddFluidPatientMode {
                             self.dismiss(animated: true, completion: nil)
                         } else {
@@ -189,7 +189,7 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
     }
     
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
-        let isPresentingInAddFluidPatientMode = presentingViewController is UINavigationController
+        let isPresentingInAddFluidPatientMode = presentingViewController is UITabBarController
         
         if isPresentingInAddFluidPatientMode {
             dismiss(animated: true, completion: nil)
