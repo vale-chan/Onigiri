@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Onigiri/ReflectionTableViewController.swift"
+            timestampString = "582394991.892617"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Onigiri/ReflectionTableViewController.swift"
+            timestampString = "582394991.89307"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Onigiri/ReflectionTableViewController.swift"
+            timestampString = "582394991.8931561"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ReflectionTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Onigiri.ReflectionTableViewController.reflections.getter : Swift.Array&lt;Onigiri.Reflection&gt;"
+                  moduleName = "Onigiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Vale-chan/Documents/Uni/Masterarbeit/2.%20Ansatz/Onigiri/Onigiri/Onigiri/ReflectionTableViewController.swift"
+                  timestampString = "582389720.602777"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Onigiri.ReflectionTableViewController.reflections.setter : Swift.Array&lt;Onigiri.Reflection&gt;"
+                  moduleName = "Onigiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Vale-chan/Documents/Uni/Masterarbeit/2.%20Ansatz/Onigiri/Onigiri/Onigiri/ReflectionTableViewController.swift"
+                  timestampString = "582389720.605448"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Onigiri.ReflectionTableViewController.reflections.modify : Swift.Array&lt;Onigiri.Reflection&gt;"
+                  moduleName = "Onigiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Vale-chan/Documents/Uni/Masterarbeit/2.%20Ansatz/Onigiri/Onigiri/Onigiri/ReflectionTableViewController.swift"
+                  timestampString = "582389720.607819"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Onigiri.ReflectionTableViewController.reflections.modify : Swift.Array&lt;Onigiri.Reflection&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Onigiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Vale-chan/Documents/Uni/Masterarbeit/2.%20Ansatz/Onigiri/Onigiri/Onigiri/ReflectionTableViewController.swift"
+                  timestampString = "582389720.610837"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Onigiri.ReflectionTableViewController.init(style: __C.UITableViewStyle) -&gt; Onigiri.ReflectionTableViewController"
+                  moduleName = "Onigiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Vale-chan/Documents/Uni/Masterarbeit/2.%20Ansatz/Onigiri/Onigiri/Onigiri/ReflectionTableViewController.swift"
+                  timestampString = "582389720.6134109"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "41">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Onigiri.ReflectionTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Onigiri.ReflectionTableViewController"
+                  moduleName = "Onigiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Vale-chan/Documents/Uni/Masterarbeit/2.%20Ansatz/Onigiri/Onigiri/Onigiri/ReflectionTableViewController.swift"
+                  timestampString = "582389720.6160541"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Onigiri.ReflectionTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Onigiri.ReflectionTableViewController&gt;"
+                  moduleName = "Onigiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Vale-chan/Documents/Uni/Masterarbeit/2.%20Ansatz/Onigiri/Onigiri/Onigiri/ReflectionTableViewController.swift"
+                  timestampString = "582389720.618276"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Onigiri/ReflectionTableViewController.swift"
+            timestampString = "582394991.8932329"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Onigiri/ReflectionTableViewController.swift"
+            timestampString = "582394991.89329"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "retrieveReflections()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Onigiri.ReflectionTableViewController.retrieveReflections() -&gt; ()"
+                  moduleName = "Onigiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Vale-chan/Documents/Uni/Masterarbeit/2.%20Ansatz/Onigiri/Onigiri/Onigiri/ReflectionTableViewController.swift"
+                  timestampString = "582392956.647374"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;Onigiri.Reflection&gt;&gt;) -&gt; () in closure #1 () -&gt; () in Onigiri.ReflectionTableViewController.retrieveReflections() -&gt; ()"
+                  moduleName = "Onigiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Vale-chan/Documents/Uni/Masterarbeit/2.%20Ansatz/Onigiri/Onigiri/Onigiri/ReflectionTableViewController.swift"
+                  timestampString = "582392956.650105"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Onigiri/ReflectionTableViewController.swift"
+            timestampString = "582394991.893342"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "fetchReflectionsFromCoreData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Onigiri/ReflectionDetailViewController.swift"
+            timestampString = "582394991.893393"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Onigiri/ReflectionTableViewController.swift"
+            timestampString = "582394991.893628"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -13,21 +13,21 @@
         <!--Meine Reflektionen-->
         <scene sceneID="bKX-KP-GcP">
             <objects>
-                <tableViewController id="rQM-ar-Ocw" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7AH-EH-pdZ">
+                <tableViewController id="rQM-ar-Ocw" customClass="ReflectionTableViewController" customModule="Onigiri" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="7AH-EH-pdZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReflectionTableViewCell" rowHeight="109" id="kJk-zz-SU0" customClass="ReflectionTableViewCell" customModule="Onigiri" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="109"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReflectionTableViewCell" rowHeight="200" id="kJk-zz-SU0" customClass="ReflectionTableViewCell" customModule="Onigiri" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kJk-zz-SU0" id="5rO-od-XIJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="108.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgx-45-HrJ">
-                                            <rect key="frame" x="8" y="8" width="359" height="92.5"/>
+                                            <rect key="frame" x="8" y="8" width="359" height="184"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnt-b8-DD0">
                                                     <rect key="frame" x="8" y="8" width="343" height="21"/>
@@ -36,7 +36,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Preview..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs5-Q0-0C0">
-                                                    <rect key="frame" x="8" y="8" width="343" height="76.5"/>
+                                                    <rect key="frame" x="8" y="37" width="343" height="139"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -44,21 +44,21 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="fs5-Q0-0C0" firstAttribute="leading" secondItem="wgx-45-HrJ" secondAttribute="leading" constant="8" id="2Zj-jf-xT6"/>
-                                                <constraint firstAttribute="trailing" secondItem="fs5-Q0-0C0" secondAttribute="trailing" constant="8" id="8Do-Cz-0VU"/>
-                                                <constraint firstAttribute="bottom" secondItem="fs5-Q0-0C0" secondAttribute="bottom" constant="8" id="8kj-3z-2Un"/>
-                                                <constraint firstItem="fs5-Q0-0C0" firstAttribute="top" secondItem="wgx-45-HrJ" secondAttribute="top" constant="8" id="aA4-h5-OGk"/>
-                                                <constraint firstAttribute="trailing" secondItem="Vnt-b8-DD0" secondAttribute="trailing" constant="8" id="bfo-Pi-5d0"/>
-                                                <constraint firstItem="Vnt-b8-DD0" firstAttribute="leading" secondItem="wgx-45-HrJ" secondAttribute="leading" constant="8" id="g3U-LR-es3"/>
-                                                <constraint firstItem="Vnt-b8-DD0" firstAttribute="top" secondItem="wgx-45-HrJ" secondAttribute="top" constant="8" id="tiv-cj-RWu"/>
+                                                <constraint firstItem="fs5-Q0-0C0" firstAttribute="top" secondItem="Vnt-b8-DD0" secondAttribute="bottom" constant="8" id="6h1-LO-eHm"/>
+                                                <constraint firstItem="Vnt-b8-DD0" firstAttribute="top" secondItem="wgx-45-HrJ" secondAttribute="top" constant="8" id="P3z-cg-NWe"/>
+                                                <constraint firstAttribute="bottom" secondItem="fs5-Q0-0C0" secondAttribute="bottom" constant="8" id="Wpz-D2-Ux0"/>
+                                                <constraint firstItem="fs5-Q0-0C0" firstAttribute="leading" secondItem="wgx-45-HrJ" secondAttribute="leading" constant="8" id="bet-ht-wM3"/>
+                                                <constraint firstAttribute="trailing" secondItem="Vnt-b8-DD0" secondAttribute="trailing" constant="8" id="c24-yI-UOX"/>
+                                                <constraint firstAttribute="trailing" secondItem="fs5-Q0-0C0" secondAttribute="trailing" constant="8" id="p1M-I4-z7e"/>
+                                                <constraint firstItem="Vnt-b8-DD0" firstAttribute="leading" secondItem="wgx-45-HrJ" secondAttribute="leading" constant="8" id="wmy-vU-1UB"/>
                                             </constraints>
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="wgx-45-HrJ" secondAttribute="bottom" constant="8" id="7dg-IX-8Li"/>
-                                        <constraint firstAttribute="trailing" secondItem="wgx-45-HrJ" secondAttribute="trailing" constant="8" id="HOC-eC-zWl"/>
-                                        <constraint firstItem="wgx-45-HrJ" firstAttribute="leading" secondItem="5rO-od-XIJ" secondAttribute="leading" constant="8" id="TSA-Tp-1oC"/>
-                                        <constraint firstItem="wgx-45-HrJ" firstAttribute="top" secondItem="5rO-od-XIJ" secondAttribute="top" constant="8" id="a25-vJ-AEw"/>
+                                        <constraint firstItem="wgx-45-HrJ" firstAttribute="top" secondItem="5rO-od-XIJ" secondAttribute="top" constant="8" id="BVq-Qb-SCx"/>
+                                        <constraint firstAttribute="bottom" secondItem="wgx-45-HrJ" secondAttribute="bottom" constant="8" id="MUj-We-iTe"/>
+                                        <constraint firstAttribute="trailing" secondItem="wgx-45-HrJ" secondAttribute="trailing" constant="8" id="Uts-Lk-taN"/>
+                                        <constraint firstItem="wgx-45-HrJ" firstAttribute="leading" secondItem="5rO-od-XIJ" secondAttribute="leading" constant="8" id="aXA-d3-jfp"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -106,7 +106,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hier kannst du deine Reflektion festhalten" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zmx-sv-JDh">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zmx-sv-JDh">
                                                 <rect key="frame" x="8" y="36.5" width="343" height="85"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

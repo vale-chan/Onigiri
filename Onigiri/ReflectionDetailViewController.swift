@@ -61,7 +61,7 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
             answer4TextView.text = reflection.answer4
         }
         
-        if question1Label.text != "" {
+        if answer1TextView.text != "" {
             isExsisting = true
         }
         
@@ -133,19 +133,19 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
                 if let moc = managedObjectContext {
                     let reflection = Reflection(context: moc)
                 
-                reflection.answer1 = answer1
-                reflection.answer2 = answer2
-                reflection.answer3 = answer3
-                reflection.answer4 = answer4
-                
-                saveToCoreData() {
+                    reflection.answer1 = answer1
+                    reflection.answer2 = answer2
+                    reflection.answer3 = answer3
+                    reflection.answer4 = answer4
                     
-                    let isPresentingInAddFluidPatientMode = self.presentingViewController is UINavigationController
-                    if isPresentingInAddFluidPatientMode {
+                    saveToCoreData() {
+                        
+                        let isPresentingInAddFluidPatientMode = self.presentingViewController is UINavigationController
+                        if isPresentingInAddFluidPatientMode {
                             self.dismiss(animated: true, completion: nil)
                         } else {
                             self.navigationController!.popViewController(animated: true)
-                    }
+                        }
                     }
                 }
             }

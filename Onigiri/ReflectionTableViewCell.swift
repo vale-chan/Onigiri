@@ -11,7 +11,7 @@ import UIKit
 class ReflectionTableViewCell: UITableViewCell {
     
     @IBOutlet weak var shadowView: UIView!
-   // @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var previewLabel: UILabel!
     
 

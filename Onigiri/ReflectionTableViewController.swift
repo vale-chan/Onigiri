@@ -117,7 +117,7 @@ class ReflectionTableViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetails" {
+        if segue.identifier == "ShowReflection" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 
                 let reflectionDetailsViewController = segue.destination as! ReflectionDetailViewController
