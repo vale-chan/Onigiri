@@ -65,9 +65,9 @@ class ReflectionTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    func retrieveNotes() {
+    func retrieveReflections() {
         managedObjectContext?.perform {
-            self.fetchNotesFromCoreData { (reflections) in
+            self.fetchReflectionsFromCoreData { (reflections) in
                 if let reflections = reflections {
                     self.reflections = reflections
                     self.tableView.reloadData()
@@ -76,7 +76,7 @@ class ReflectionTableViewController: UITableViewController {
         }
     }
     
-    func fetchNotesFromCoreData(completion: @escaping ([Reflection]?)->Void){
+    func fetchReflectionsFromCoreData(completion: @escaping ([Reflection]?)->Void){
         managedObjectContext?.perform {
             var reflections = [Reflection]()
             let request: NSFetchRequest<Reflection> = Reflection.fetchRequest()
@@ -85,7 +85,7 @@ class ReflectionTableViewController: UITableViewController {
                 reflections = try  self.managedObjectContext!.fetch(request)
                 completion(reflections)
             } catch {
-                print("Could not fetch notes from CoreData:\(error.localizedDescription)")
+                print("Could not fetch reflections from CoreData:\(error.localizedDescription)")
             }
         }
     }

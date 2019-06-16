@@ -26,6 +26,8 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
     @IBOutlet weak var answer3TextView: UITextView!
     @IBOutlet weak var answer4TextView: UITextView!
     
+    
+    
     let question1 = "erstens"
     let question2 = "zweitens"
     let question3 = "drittens"
@@ -95,6 +97,10 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
         part4View.layer.cornerRadius = 2
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     
     // Core data
     func saveToCoreData(completion: @escaping ()->Void){
@@ -102,10 +108,10 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
             do {
                 try self.managedObjectContext?.save()
                 completion()
-                print("Note saved to CoreData.")
+                print("Reflection saved to CoreData.")
                 
             } catch let error {
-                print("Could not save note to CoreData: \(error.localizedDescription)")
+                print("Could not save reflection to CoreData: \(error.localizedDescription)")
             }
         }
     }
@@ -147,10 +153,10 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
                     let reflection = self.reflection
                     
                     let managedObject = reflection
-                    managedObject!.setValue(answer1TextView.text, forKey: "answer1")
-                    managedObject!.setValue(answer2TextView.text, forKey: "answer2")
-                    managedObject!.setValue(answer3TextView.text, forKey: "answer3")
-                    managedObject!.setValue(answer4TextView.text, forKey: "answer4")
+                    managedObject?.setValue(answer1TextView.text, forKey: "answer1")
+                    managedObject?.setValue(answer2TextView.text, forKey: "answer2")
+                    managedObject?.setValue(answer3TextView.text, forKey: "answer3")
+                    managedObject?.setValue(answer4TextView.text, forKey: "answer4")
                 
                 do {
                     try context.save()
@@ -161,7 +167,7 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
                         self.navigationController!.popViewController(animated: true)
                     }
                 } catch {
-                    print("Failed to update existing note.")
+                    print("Failed to update existing reflection.")
                 }
             }
         }
@@ -176,19 +182,18 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
             navigationController!.popViewController(animated: true)
         }
     }
-
     
-    
-    
-
-/*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // hiding keyboard
+    func textViewShouldReturn(_ textView: UITextView) -> Bool {
+        textView.resignFirstResponder()
+        return false
     }
-    */
+    
+    // vorschautext verschwindet
+    internal func textViewDidBeginEditing(_ textView: UITextView) {
+        if (textView.text == "Hier kannst du deine Reflektion festhalten") {
+            textView.text = ""
+        }
+    }
 
 }
