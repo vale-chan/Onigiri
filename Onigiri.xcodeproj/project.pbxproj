@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0265F3E122B6D40700FEB00E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0265F3E022B6D40700FEB00E /* InfoViewController.swift */; };
 		02EFDBA022B657D400A157D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFDB9F22B657D400A157D2 /* AppDelegate.swift */; };
 		02EFDBA222B657D400A157D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFDBA122B657D400A157D2 /* ViewController.swift */; };
 		02EFDBA522B657D400A157D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EFDBA322B657D400A157D2 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0265F3E022B6D40700FEB00E /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		02EFDB9C22B657D400A157D2 /* Onigiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onigiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EFDB9F22B657D400A157D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02EFDBA122B657D400A157D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				02EFDBA922B657D500A157D2 /* Assets.xcassets */,
 				02EFDBAB22B657D500A157D2 /* LaunchScreen.storyboard */,
 				02EFDBAE22B657D500A157D2 /* Info.plist */,
+				0265F3E022B6D40700FEB00E /* InfoViewController.swift */,
 				02EFDBB422B6625C00A157D2 /* ReflectionTableViewController.swift */,
 				02EFDBB622B669BD00A157D2 /* ReflectionTableViewCell.swift */,
 				02EFDBB822B66CAB00A157D2 /* ReflectionDetailViewController.swift */,
@@ -150,6 +153,7 @@
 				02EFDBB922B66CAB00A157D2 /* ReflectionDetailViewController.swift in Sources */,
 				02EFDBB722B669BD00A157D2 /* ReflectionTableViewCell.swift in Sources */,
 				02EFDBB522B6625C00A157D2 /* ReflectionTableViewController.swift in Sources */,
+				0265F3E122B6D40700FEB00E /* InfoViewController.swift in Sources */,
 				02EFDBA822B657D400A157D2 /* Onigiri.xcdatamodeld in Sources */,
 				02EFDBA222B657D400A157D2 /* ViewController.swift in Sources */,
 				02EFDBA022B657D400A157D2 /* AppDelegate.swift in Sources */,

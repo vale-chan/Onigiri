@@ -30,14 +30,14 @@
                                             <rect key="frame" x="8" y="8" width="359" height="184"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnt-b8-DD0">
-                                                    <rect key="frame" x="8" y="8" width="343" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                    <rect key="frame" x="8" y="8" width="343" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Preview..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fs5-Q0-0C0">
-                                                    <rect key="frame" x="8" y="37" width="343" height="139"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <rect key="frame" x="8" y="33" width="343" height="143"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -228,12 +228,12 @@
                         <viewLayoutGuide key="safeArea" id="Tuj-Kb-jKQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Neue Reflektion" id="1Mv-Xy-DT8">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="a97-Zc-cIE">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="cancelIcon" id="a97-Zc-cIE">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="d3M-hf-g7i" id="OkQ-fI-WA6"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="PXi-FV-hDl">
+                        <barButtonItem key="rightBarButtonItem" image="saveIcon" id="PXi-FV-hDl">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="d3M-hf-g7i" id="9ME-ST-fRZ"/>
                             </connections>
@@ -279,7 +279,7 @@
         <!--Reflektieren mit Onigiri-->
         <scene sceneID="uGw-Zv-bPM">
             <objects>
-                <viewController id="cFH-Dy-aTC" sceneMemberID="viewController">
+                <viewController id="cFH-Dy-aTC" customClass="InfoViewController" customModule="Onigiri" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vXN-xZ-XE9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,11 +289,11 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFt-8i-JBY">
                                         <rect key="frame" x="8" y="8" width="343" height="522"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 -- 
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</mutableString>
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</string>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -318,6 +318,10 @@ Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie co
                         <viewLayoutGuide key="safeArea" id="OHt-LV-Ozt"/>
                     </view>
                     <navigationItem key="navigationItem" title="Reflektieren mit Onigiri" id="v6c-b5-hzE"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="cFt-8i-JBY" id="KED-Mi-pIj"/>
+                        <outlet property="shadowView" destination="Dwu-ow-9Oa" id="4V2-hF-YJR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Rf-at-Azf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -379,8 +383,10 @@ Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie co
         </scene>
     </scenes>
     <resources>
+        <image name="cancelIcon" width="16" height="16"/>
         <image name="info" width="30" height="30"/>
         <image name="list" width="30" height="30"/>
+        <image name="saveIcon" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="KlQ-4A-eV4"/>
