@@ -198,5 +198,6 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
             navigationController!.popViewController(animated: true)
         }
     }
+
     
 }
