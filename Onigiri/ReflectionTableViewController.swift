@@ -115,6 +115,7 @@ class ReflectionTableViewController: UITableViewController {
         }
     }
     
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowReflection" {
@@ -126,11 +127,17 @@ class ReflectionTableViewController: UITableViewController {
                 reflectionDetailsViewController.indexPath = indexPath.row
                 reflectionDetailsViewController.isExsisting = false
                 reflectionDetailsViewController.reflection = selectedReflection
+                
+                
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateStyle = .full
+                dateFormatter.locale = Locale(identifier: "de_DE")
+                reflectionDetailsViewController.navigationItem.title = "Meine Reflexion"
             }
         }
         
         else if segue.identifier == "AddReflection" {
-            print("User added a new note.")
+            print("User added a new reflection.")
         }
     }
 

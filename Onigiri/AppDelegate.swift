@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        IQKeyboardManager.shared.enable = true
+        
         UITabBar.appearance().tintColor = UIColor(red: 1, green: 0.4627, blue: 0.5333, alpha: 1)
         UITabBar.appearance().backgroundColor = UIColor(red: 0.949, green: 0.949, blue: 0.949, alpha: 1)
 

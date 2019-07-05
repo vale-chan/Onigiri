@@ -133,7 +133,7 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         if answer1TextView.text == "" {
             let alertController = UIAlertController(title: "Fehlende Information", message: "Bitte beantworte die erste Reflektionsfrage. Die restlichen Reflektionsfragen müssen nicht ausgefüllt werden.", preferredStyle: UIAlertController.Style.alert)
-            let OKAction = UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil)
+            let OKAction = UIAlertAction(title: "Zurück", style: UIAlertAction.Style.default, handler: nil)
             
             alertController.addAction(OKAction)
             self.present(alertController, animated: true, completion: nil)
@@ -198,5 +198,6 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
             navigationController!.popViewController(animated: true)
         }
     }
+
     
 }
