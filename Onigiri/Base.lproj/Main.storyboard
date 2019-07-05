@@ -391,10 +391,6 @@ Cg
                                             <fragment>
 <<<<<<< HEAD
                                                 <mutableString key="content">ONIGIRI wurde speziell im Rahmen einer Masterarbeit am Institut für Erziehungswissenschaft an der Universität Zürich entwickelt und befindet sich momentan in der Testphase. ONIGIRI hilft dir dabei, deinen Unterricht zu reflektieren und ihn dadurch noch besser für dich und deine Schüler zu gestalten.</mutableString>
-=======
-
-                                                <mutableString key="content">ONIGIRI wurde speziell im Rahmen einer Masterarbeit am Institut für Erziehungswissenschaft an der Universität Zürich entwickelt und befindet sich momentan in der Testphase. ONIGIRI hilft dir dabei, deinen Unterricht zu reflektieren und ihn dadurch noch besser für dich und deine Schüler zu gestalten.  </mutableString>
->>>>>>> 9c0358edd4727cb3daf71521f2792f7c20cafd22
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="HelveticaNeue"/>
@@ -422,8 +418,46 @@ Cg
 </string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-<<<<<<< HEAD
+                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <mutableString key="content">Der eigene Unterricht ist eine wichtige Quelle, um deine Kompetenzen zu erweitern und deinen Unterricht noch besser zu gestalten. Diverse Forschungsprojekte konnten zeigen, dass Lehrpersonen, welche regelmässig Unterrichtsreflexionen durchführen, eine höhere Professionalität aufwiesen, was sich positiv auf das Lernen ihrer Schülerschaft auswirkt. Trotz der positiven Ergebnisse, fällt die Unterrichtsreflexion manchen Lehrpersonen jedoch schwer. Hier könnte ONIGIRI helfen.</mutableString>
 =======
+
+                                                <mutableString key="content">ONIGIRI wurde speziell im Rahmen einer Masterarbeit am Institut für Erziehungswissenschaft an der Universität Zürich entwickelt und befindet sich momentan in der Testphase. ONIGIRI hilft dir dabei, deinen Unterricht zu reflektieren und ihn dadurch noch besser für dich und deine Schüler zu gestalten.  </mutableString>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Warum Unterrichtsreflexion?">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="HelveticaNeue"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -450,7 +484,6 @@ Cg
 </string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
->>>>>>> 9c0358edd4727cb3daf71521f2792f7c20cafd22
                                                     <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -485,8 +518,9 @@ Cg
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-<<<<<<< HEAD
-                                                <mutableString key="content">ONIGIRI basiert auf dem Reflexionsmodell von Nguyen, Fernandez, Karsenti &amp; Charlin (2014). In ihrer Arbeit fassen sie mehrere bekannte Reflexionsmodelle zu einem ganzheitlichen Modell zusammen. Demnach beinhaltet Reflexion sich selbst bewusst, kritisch, erforschend und wiederholend mit seinen Überlegungen und Handlungen auseinanderzusetzen, mit Berücksichtigung der zugrundeliegende Konzeptionen, sowie mit einem Blick auf Veränderungen.  </mutableString>
+
+                                                <mutableString key="content">ONIGIRI basiert auf dem Reflexionsmodell von Nguyen et al.. In ihrer Arbeit fassen sie mehrere bekannte Reflexionsmodelle zu einem ganzheitlichen Modell zusammen. Demnach beinhaltet Reflexion sich selbst bewusst, kritisch, erforschend und wiederholend mit seinen Überlegungen und Handlungen auseinanderzusetzen, mit Berücksichtigung der zugrundeliegende Konzeptionen, sowie mit einem Blick auf Veränderungen. Wenn du mehr über die Arbeit von Nguyen et al. melde dich per E-Mail bei der Versuchsleitung (Achtung: die Arbeit ist nur in englischer Sprache verfügbar).</mutableString>
+
 =======
 
                                                 <mutableString key="content">ONIGIRI basiert auf dem Reflexionsmodell von Nguyen et al.. In ihrer Arbeit fassen sie mehrere bekannte Reflexionsmodelle zu einem ganzheitlichen Modell zusammen. Demnach beinhaltet Reflexion sich selbst bewusst, kritisch, erforschend und wiederholend mit seinen Überlegungen und Handlungen auseinanderzusetzen, mit Berücksichtigung der zugrundeliegende Konzeptionen, sowie mit einem Blick auf Veränderungen. Wenn du mehr über die Arbeit von Nguyen et al. melde dich per E-Mail bei der Versuchsleitung (Achtung: die Arbeit ist nur in englischer Sprache verfügbar).</mutableString>
