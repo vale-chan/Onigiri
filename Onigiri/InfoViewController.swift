@@ -33,30 +33,15 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /* -> link inebringe
-        let attributedString = NSMutableAttributedString(string: "XXXhierXXX")
-        let url = URL(string: "https://www.apple.com")!
-        
-        // Set the 'click here' substring to be the link
-        attributedString.setAttributes([.link: url], range: NSRange(location: 0, length: attributedString.string.count))
-        
-        self.infoTextView.attributedText = attributedString
-        self.infoTextView.isUserInteractionEnabled = true
-        self.infoTextView.isEditable = false
-        
-        // Set how links should appear: blue and underlined
-        self.infoTextView.linkTextAttributes = [
-            .foregroundColor: UIColor.blue,
-            .underlineStyle: NSUnderlineStyle.single.rawValue
-        ]
- */
-        
+        /* nicht mehr Verlinkt für den Moment
+         
         let linkedText = NSMutableAttributedString(attributedString: infoTextView.attributedText)
         let hyperlinked = linkedText.setAsLink(textToFind: "hier", linkURL: "https://onlinelibrary.wiley.com/doi/full/10.1111/medu.12583")
         
         if hyperlinked {
             infoTextView.attributedText = NSAttributedString(attributedString: linkedText)
         }
+ */
 
     
         shadowView.layer.shadowColor =  UIColor(red:0, green:0, blue:0, alpha: 1.0).cgColor
