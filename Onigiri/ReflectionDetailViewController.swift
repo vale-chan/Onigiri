@@ -132,7 +132,7 @@ class ReflectionDetailViewController: UIViewController, UITextViewDelegate, UINa
     // Saving Data
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         if answer1TextView.text == "" {
-            let alertController = UIAlertController(title: "Fehlende Information", message: "Bitte beantworte die erste Reflektionsfrage. Die restlichen Reflektionsfragen müssen nicht ausgefüllt werden.", preferredStyle: UIAlertController.Style.alert)
+            let alertController = UIAlertController(title: "Fehlende Information", message: "Bitte beantworte die erste Reflektionsfrage. Die restlichen Reflektionsfragen sind freiwillig.", preferredStyle: UIAlertController.Style.alert)
             let OKAction = UIAlertAction(title: "Zurück", style: UIAlertAction.Style.default, handler: nil)
             
             alertController.addAction(OKAction)
