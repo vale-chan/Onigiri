@@ -8,17 +8,31 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        //Notifications
+        let center = UNUserNotificationCenter.current()
+        let options: UNAuthorizationOptions = [.sound, .alert, .badge]
         
+        center.requestAuthorization(options: options) { (allowed, error) in
+            if error != nil {
+                print(error)
+            }
+        }
+        
+        center.delegate = self
+        
+        //Tastatur verschiwnden lassen
         IQKeyboardManager.shared.enable = true
         
+        //App-Colours
         UITabBar.appearance().tintColor = UIColor(red: 1, green: 0.4627, blue: 0.5333, alpha: 1)
         UITabBar.appearance().backgroundColor = UIColor(red: 0.949, green: 0.949, blue: 0.949, alpha: 1)
 
@@ -36,6 +50,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.statusBarStyle = .lightContent
         
         return true
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .badge, .sound])
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
