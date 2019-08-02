@@ -25,6 +25,7 @@
 		026A09A722CF8FFB00CF3D4B /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A099622CF8FFB00CF3D4B /* IQUITextFieldView+Additions.swift */; };
 		026A09A822CF8FFB00CF3D4B /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A099722CF8FFB00CF3D4B /* IQUIView+Hierarchy.swift */; };
 		026A09A922CF8FFB00CF3D4B /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026A099822CF8FFB00CF3D4B /* IQNSArray+Sort.swift */; };
+		02A5BA2222F4381300B0873F /* testerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5BA2122F4381300B0873F /* testerTableViewController.swift */; };
 		02EFDBA022B657D400A157D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFDB9F22B657D400A157D2 /* AppDelegate.swift */; };
 		02EFDBA222B657D400A157D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFDBA122B657D400A157D2 /* ViewController.swift */; };
 		02EFDBA522B657D400A157D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EFDBA322B657D400A157D2 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		026A099622CF8FFB00CF3D4B /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
 		026A099722CF8FFB00CF3D4B /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		026A099822CF8FFB00CF3D4B /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		02A5BA2122F4381300B0873F /* testerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testerTableViewController.swift; sourceTree = "<group>"; };
 		02EFDB9C22B657D400A157D2 /* Onigiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onigiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EFDB9F22B657D400A157D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02EFDBA122B657D400A157D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				02EFDBB422B6625C00A157D2 /* ReflectionTableViewController.swift */,
 				02EFDBB622B669BD00A157D2 /* ReflectionTableViewCell.swift */,
 				02EFDBB822B66CAB00A157D2 /* ReflectionDetailViewController.swift */,
+				02A5BA2122F4381300B0873F /* testerTableViewController.swift */,
 				02EFDBA622B657D400A157D2 /* Onigiri.xcdatamodeld */,
 			);
 			path = Onigiri;
@@ -260,6 +263,7 @@
 				026A099C22CF8FFB00CF3D4B /* IQBarButtonItem.swift in Sources */,
 				02EFDBB522B6625C00A157D2 /* ReflectionTableViewController.swift in Sources */,
 				026A09A722CF8FFB00CF3D4B /* IQUITextFieldView+Additions.swift in Sources */,
+				02A5BA2222F4381300B0873F /* testerTableViewController.swift in Sources */,
 				0265F3E122B6D40700FEB00E /* InfoViewController.swift in Sources */,
 				026A09A022CF8FFB00CF3D4B /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				026A09A422CF8FFB00CF3D4B /* IQKeyboardManager.swift in Sources */,
