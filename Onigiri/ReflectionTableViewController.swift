@@ -169,6 +169,81 @@ class ReflectionTableViewController: UITableViewController {
             print("User added a new reflection.")
         }
     }
+    
+    //Export Data as CVS
+    @IBAction func exportBarButtonTapped(_ sender: Any) {
+        exportDatabase()
+    }
+    
+    
+    func exportDatabase() {
+        let exportString = createExportString()
+        saveAndExport(exportString: exportString)
+    }
+    
+    func saveAndExport(exportString: String) {
+        let exportFilePath = NSTemporaryDirectory() + "Teacher_Reflections.csv"
+        let exportFileURL = NSURL(fileURLWithPath: exportFilePath)
+        FileManager.default.createFile(atPath: exportFilePath, contents: NSData() as Data, attributes: nil)
+        //var fileHandleError: NSError? = nil
+        var fileHandle: FileHandle? = nil
+        do {
+            fileHandle = try FileHandle(forWritingTo: exportFileURL as URL)
+        } catch {
+            print("Error with fileHandle")
+        }
+        
+        if fileHandle != nil {
+            fileHandle!.seekToEndOfFile()
+            let csvData = exportString.data(using: String.Encoding.utf8, allowLossyConversion: false)
+            fileHandle!.write(csvData!)
+            
+            fileHandle!.closeFile()
+            
+            let firstActivityItem = NSURL(fileURLWithPath: exportFilePath)
+            let activityViewController : UIActivityViewController = UIActivityViewController(
+                activityItems: [firstActivityItem], applicationActivities: nil)
+            
+            activityViewController.excludedActivityTypes = [
+                UIActivity.ActivityType.assignToContact,
+                UIActivity.ActivityType.saveToCameraRoll,
+                UIActivity.ActivityType.postToFlickr,
+                UIActivity.ActivityType.postToVimeo,
+                UIActivity.ActivityType.postToTencentWeibo
+            ]
+            
+            self.present(activityViewController, animated: true, completion: nil)
+        }
+    }
+    
+    func createExportString() -> String {
+        var answer1: String?
+        var answer2: String?
+        var answer3: String?
+        var answer4: String?
+        var date: NSDate?
+        
+        var export: String = NSLocalizedString("answer1, answer2, answer3, answer4, date", comment: "<#String#>")
+        for (index, itemList) in reflections.enumerated() {
+            if index <= reflections.count - 1 {
+                answer1 = itemList.value(forKey: "answer1") as! String?
+                answer2 = itemList.value(forKey: "answer2") as! String?
+                answer3 = itemList.value(forKey: "answer3") as! String?
+                answer4 = itemList.value(forKey: "answer4") as! String?
+                date = itemList.value(forKey: "date") as! NSDate?
+                let answer1String = answer1
+                let answer2String = answer2
+                let answer3String = answer3
+                let answer4String = answer4
+                let dateString = date
+
+                export += "\(answer1String!),\(answer2String!),\(answer3String!),\(answer4String!),\(dateString) \n"
+            }
+        }
+        print("This is what the app will export: \(export)")
+        return export
+    }
+    
 
 
 }
