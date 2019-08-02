@@ -27,7 +27,7 @@ class ReflectionTableViewController: UITableViewController {
         let center = UNUserNotificationCenter.current()
         let content = UNMutableNotificationContent()
 
-        content.title = "Deine tägliche Reflextion"
+        content.title = "Deine tägliche Reflexion"
         content.body = "Hast du dir heute schon Zeit für deine Unterrichtsreflexion genommen?"
         content.sound = UNNotificationSound.default
         content.threadIdentifier = "local-notifications"
