@@ -22,6 +22,7 @@ class ReflectionTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         //Notifications
         
         let center = UNUserNotificationCenter.current()
@@ -45,6 +46,7 @@ class ReflectionTableViewController: UITableViewController {
         }
         
         //Reflections
+
         retrieveReflections()
         
         // Styles
@@ -75,9 +77,12 @@ class ReflectionTableViewController: UITableViewController {
         let reflection: Reflection = reflections[indexPath.row]
         cell.configureCell(reflection: reflection)
         cell.backgroundColor = UIColor.clear
-        
+
         return cell
     }
+    
+
+    
 
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -132,6 +137,7 @@ class ReflectionTableViewController: UITableViewController {
             
             do {
                 reflections = try  self.managedObjectContext!.fetch(request)
+                reflections = reflections.reversed()
                 completion(reflections)
             } catch {
                 print("Could not fetch reflections from CoreData:\(error.localizedDescription)")

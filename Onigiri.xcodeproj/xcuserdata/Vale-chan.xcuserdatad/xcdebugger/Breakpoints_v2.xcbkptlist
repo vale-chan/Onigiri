@@ -20,13 +20,15 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Onigiri/ReflectionTableViewController.swift"
-            timestampString = "586253885.657389"
+
+            timestampString = "586433295.080287"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "retrieveReflections()"
-            landmarkType = "7">
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "ReflectionTableViewController"
+            landmarkType = "3">
+
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -68,12 +70,14 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Onigiri/ReflectionTableViewController.swift"
-            timestampString = "586253885.657936"
+
+            timestampString = "586433295.08066"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "fetchReflectionsFromCoreData(completion:)"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "prepare(for:sender:)"
+
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -84,13 +88,15 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Onigiri/ReflectionTableViewController.swift"
-            timestampString = "586253885.658237"
+
+            timestampString = "586433295.080935"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "ReflectionTableViewController"
+            landmarkType = "3">
+
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
