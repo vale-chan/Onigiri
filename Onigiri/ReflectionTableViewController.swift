@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 class ReflectionTableViewController: UITableViewController {
     
@@ -21,7 +22,31 @@ class ReflectionTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        //Notifications
         
+        let center = UNUserNotificationCenter.current()
+        let content = UNMutableNotificationContent()
+        
+        content.title = "Deine tägliche Reflextion"
+        content.body = "Hast du dir heute schon Zeit für deine Unterrichtsreflexion genommen?"
+        content.sound = UNNotificationSound.default
+        content.threadIdentifier = "local-notifications"
+        
+        var date = DateComponents()
+        date.hour = 17
+        date.minute = 30
+        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
+        let request = UNNotificationRequest(identifier: "onigiri-notification", content: content, trigger: trigger)
+        
+        center.add(request) { (error) in
+            if error != nil {
+                print (error)
+            }
+        }
+        
+        //Reflections
+
         retrieveReflections()
         
         // Styles
