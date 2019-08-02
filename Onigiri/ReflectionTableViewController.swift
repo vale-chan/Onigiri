@@ -96,7 +96,7 @@ class ReflectionTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let delete = UITableViewRowAction(style: .destructive, title: "                    ") { (action, indexPath) in
+        let delete = UITableViewRowAction(style: .default , title: "\u{267A}") { (action, indexPath) in
 
             let reflection = self.reflections[indexPath.row]
             context.delete(reflection)
@@ -111,8 +111,9 @@ class ReflectionTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.reloadData()
         }
+        
+        delete.backgroundColor = UIColor(red: 1, green: 0.4627, blue: 0.5333, alpha: 1)
 
-        delete.backgroundColor = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 1.0)
         return [delete]
     }
 

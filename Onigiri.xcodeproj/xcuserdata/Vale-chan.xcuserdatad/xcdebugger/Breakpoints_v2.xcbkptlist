@@ -23,9 +23,15 @@
             timestampString = "586433295.080287"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< Updated upstream
             startingLineNumber = "124"
             endingLineNumber = "124"
             landmarkName = "tableView(_:editActionsForRowAt:)"
+=======
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "retrieveReflections()"
+>>>>>>> Stashed changes
             landmarkType = "7">
             <Locations>
                <Location
@@ -71,9 +77,15 @@
             timestampString = "586433295.08066"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< Updated upstream
             startingLineNumber = "135"
             endingLineNumber = "135"
             landmarkName = "retrieveReflections()"
+=======
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "fetchReflectionsFromCoreData(completion:)"
+>>>>>>> Stashed changes
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -87,9 +99,15 @@
             timestampString = "586433295.080935"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+<<<<<<< Updated upstream
             startingLineNumber = "150"
             endingLineNumber = "150"
             landmarkName = "fetchReflectionsFromCoreData(completion:)"
+=======
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "prepare(for:sender:)"
+>>>>>>> Stashed changes
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
