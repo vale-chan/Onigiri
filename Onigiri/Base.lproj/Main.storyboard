@@ -394,7 +394,7 @@ Cg
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <mutableString key="content">ONIGIRI wurde speziell im Rahmen einer Masterarbeit am Institut für Erziehungswissenschaft an der Universität Zürich entwickelt und befindet sich momentan in der Testphase. ONIGIRI hilft dir dabei, deinen Unterricht zu reflektieren und ihn dadurch noch besser für dich und deine Schüler zu gestalten.  </mutableString>
+                                                <mutableString key="content">ONIGIRI wurde speziell im Rahmen einer Masterarbeit am Institut für Erziehungswissenschaft an der Universität Zürich entwickelt. ONIGIRI hilft dir dabei, deinen Unterricht zu reflektieren und ihn dadurch noch besser für dich und deine Schüler zu gestalten.  </mutableString>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="HelveticaNeue"/>
@@ -469,7 +469,7 @@ Cg
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <mutableString key="content">ONIGIRI basiert auf dem Reflexionsmodell von Nguyen et al.. In ihrer Arbeit fassen sie mehrere bekannte Reflexionsmodelle zu einem ganzheitlichen Modell zusammen. Demnach beinhaltet Reflexion sich selbst bewusst, kritisch, erforschend und wiederholend mit seinen Überlegungen und Handlungen auseinanderzusetzen, mit Berücksichtigung der zugrundeliegende Konzeptionen, sowie mit einem Blick auf Veränderungen. Wenn du mehr über die Arbeit von Nguyen et al. wissen willst, melde dich per E-Mail bei der Versuchsleitung (Achtung: die Arbeit ist nur in englischer Sprache verfügbar).</mutableString>
+                                                <mutableString key="content">ONIGIRI basiert auf dem Reflexionsmodell von Nguyen et al.. In ihrer Arbeit fassen sie mehrere bekannte Reflexionsmodelle zu einem ganzheitlichen Modell zusammen. Demnach beinhaltet Reflexion sich selbst bewusst, kritisch, erforschend und wiederholend mit seinen Überlegungen und Handlungen auseinanderzusetzen, mit Berücksichtigung der zugrundeliegende Konzeptionen, sowie mit einem Blick auf Veränderungen.</mutableString>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="HelveticaNeue"/>
